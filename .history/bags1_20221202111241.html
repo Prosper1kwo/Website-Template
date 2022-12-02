@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jazzy.com</title>
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/scipt.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="css/signup.css">
+  <style>
+    body {}
+
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    /* Set a style for all buttons */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .login {
+      background-color: transparent;
+      color: grey;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    .login:hover {
+      background-color: grey;
+      color: white;
+      border-radius: 4px 4px 0 0;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto;
+      /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%;
+      /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 25%;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+      float: left;
+    }
+
+    .price {
+      color: grey;
+      font-size: 15px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 12px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <a href="jazzy.html">
+      <h1 class="logo" style="float: left;"><b>JAZZY</b><i class="fa fa-shopping-cart fa-1x" style=""></i></h1>
+    </a>
+    <ul id="menu">
+      <b>
+        <li><a href="loginjazzy.html">Home</a></li>
+        <li><a href="#mainbody2">Gallery</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="about1.html">About & Services</a></li>
+      </b>
+    </ul>
+    <a href="cart.html"><i class="fa fa-cart-plus fa-2x"
+        style="float: right; margin-top: 30px; margin-right: 4%;"></i></a>
+  </div>
+
+
+
+
+  <div class="mainbody1">
+    <ul id="nav" style="list-style-type: none">
+      <i>
+        <li><a href="shoes1.html"><i class="fa fa-shoe-prints"></i>SHOES</a></li><br>
+        <li><a href="clothes1.html">CLOTHES</a></li><br>
+        <li><a href="bags1.html">BAGS</a></li><br>
+        <li><a href="phones1.html">PHONES & ACCESSORIES</a></li><br>
+        <li><a href="electro1.html">LAPTOPS</a></li><br>
+      </i>
+    </ul>
+  </div>
+
+
+  <div id="mainbody2" style="height: auto;">
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button class="add_to_cart_btn">Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+
+
+
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+
+
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans"
+          style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+      <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+      <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+      <p style="font-size: 10px">Some text about the jeans</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    // $('.add_to_cart_btn').on('click', function () {
+    //   var body = getElementsByClassName("cart.html/shopping_cart");
+    // });
+
+    (function () {
+      var cart = document.getElementsByClassName('js-cd-cart'); 
+      if (cart.length > 0) {
+        // var cartAddBtns = document.getElementsByClassName('js-cd-add-to-cart')
+        // var cartBody = cart[0].getElementsByClassName('cd-cart__body')[0]
+        var cartList = cartBody.getElementsByTagName('ul')[0]
+        var cartListItems = cartList.getElementsByClassName('cd-cart__product')
+        var cartTotal = cart[0].getElementsByClassName('cd-cart__checkout')[0].getElementsByTagName('span')[0]
+        var cartCount = cart[0].getElementsByClassName('cd-cart__count')[0]
+        var cartCountItems = cartCount.getElementsByTagName('li')
+        var cartUndo = cart[0].getElementsByClassName('cd-cart__undo')[0]
+        var productId = 0
+        var cartTimeoutId = false
+        var animatingQuantity = false; 
+        var initCartEvents = (); 
+
+        // function initCartEvents() {
+        //   for (var i = 0; i < cartAddBtns.length; i++) { 
+        //     (function (i) { 
+        //       cartAddBtns[i].addEventListener('click', addToCart); 
+        //     }) (i); 
+        //   }
+        //   cart[0].getElementsByClassName('cd-cart__trigger')[0].addEventListener('click', function (event) { 
+        //     event.preventDefault(); toggleCart(); 
+        //   }); 
+        //   cart[0].addEventListener('click', function (event) { 
+        //     if (event.target == cart[0]) { 
+        //       toggleCart(true); 
+        //     } 
+        //     else if (event.target.closest('.cd-cart__delete-item')) { 
+        //       event.preventDefault(); removeProduct(event.target.closest('.cd-cart__product')); 
+        //     } 
+        //   }); 
+        //   cart[0].addEventListener('change', function (event) { 
+        //     if (event.target.tagName.toLowerCase() == 'select') quickUpdateCart(); 
+        //   }); cartUndo.addEventListener('click', function (event) { 
+        //     if (event.target.tagName.toLowerCase() == 'a') { 
+        //       event.preventDefault(); 
+        //       if (cartTimeoutId) clearInterval(cartTimeoutId); 
+        //       var deletedProduct = cartList.getElementsByClassName('cd-cart__product--deleted')[0]; 
+        //       Util.addClass(deletedProduct, 'cd-cart__product--undo'); 
+        //       deletedProduct.addEventListener('animationend', function cb() { 
+        //         deletedProduct.removeEventListener('animationend', cb); 
+        //         Util.removeClass(deletedProduct, 'cd-cart__product--deleted cd-cart__product--undo'); 
+        //         deletedProduct.removeAttribute('style'); 
+        //         quickUpdateCart(); 
+        //       }); 
+        //       Util.removeClass(cartUndo, 'cd-cart__undo--visible'); 
+        //     } 
+        //   });
+        // }; 
+        function addToCart(event) { 
+          event.preventDefault(); 
+          if (animatingQuantity) return; 
+          animatingQuantity = true; 
+          var cartIsEmpty = Util.hasClass(cart[0], 'cd-cart--empty'); 
+          addProduct(this); 
+          // updateCartCount(cartIsEmpty); 
+          // updateCartTotal(this.getAttribute('data-price'), true); 
+          Util.removeClass(cart[0], 'cd-cart--empty'); 
+        }; 
+        // function toggleCart(bool) { 
+        //   var cartIsOpen = (typeof bool === 'undefined') ? Util.hasClass(cart[0], 'cd-cart--open') : bool; 
+        //   if (cartIsOpen) { 
+        //     Util.removeClass(cart[0], 'cd-cart--open'); 
+        //     if (cartTimeoutId) clearInterval(cartTimeoutId); 
+        //     Util.removeClass(cartUndo, 'cd-cart__undo--visible'); 
+        //     removePreviousProduct(); 
+        //     setTimeout(function () { 
+        //       cartBody.scrollTop = 0; 
+        //       if (Number(cartCountItems[0].innerText) == 0) Util.addClass(cart[0], 'cd-cart--empty'); 
+        //     }, 500); 
+        //   } else { 
+        //     Util.addClass(cart[0], 'cd-cart--open'); 
+        //   } 
+        // }; 
+        function addProduct(target) { 
+          productId = productId + 1; 
+          var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="assets/img/product-preview.png" alt="placeholder"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">Product Name</a></h3><span class="cd-cart__price">$25.99</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Delete</a><div class="cd-cart__quantity"><label for="cd-product-' + productId + '">Qty</label><span class="cd-cart__select"><select class="reset" id="cd-product-' + productId + '" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>'; 
+          cartList.insertAdjacentHTML('beforeend', productAdded); 
+        }; 
+        // function removeProduct(product) { 
+        //   if (cartTimeoutId) clearInterval(cartTimeoutId); 
+        //   removePreviousProduct(); 
+        //   var topPosition = product.offsetTop
+        //   var productQuantity = Number(product.getElementsByTagName('select')[0].value)
+        //   var productTotPrice = Number((product.getElementsByClassName('cd-cart__price')[0].innerText).replace('$', '')) * productQuantity; 
+        //   product.style.top = topPosition + 'px'; 
+        //   Util.addClass(product, 'cd-cart__product--deleted'); 
+        //   updateCartTotal(productTotPrice, false); 
+        //   updateCartCount(true, -productQuantity); 
+        //   Util.addClass(cartUndo, 'cd-cart__undo--visible'); 
+        //   cartTimeoutId = setTimeout(function () { 
+        //     Util.removeClass(cartUndo, 'cd-cart__undo--visible'); 
+        //     removePreviousProduct(); 
+        //   }, 8000); 
+        // }; 
+        // function removePreviousProduct() { 
+        //   var deletedProduct = cartList.getElementsByClassName('cd-cart__product--deleted'); 
+        //   if (deletedProduct.length > 0) deletedProduct[0].remove(); 
+        // }; 
+        // function updateCartCount(emptyCart, quantity) { 
+        //   if (typeof quantity === 'undefined') { 
+        //     var actual = Number(cartCountItems[0].innerText) + 1; 
+        //     var next = actual + 1; 
+        //     if (emptyCart) { 
+        //       cartCountItems[0].innerText = actual; 
+        //       cartCountItems[1].innerText = next; 
+        //       animatingQuantity = false; 
+        //     } else { 
+        //       Util.addClass(cartCount, 'cd-cart__count--update'); 
+        //       setTimeout(function () { 
+        //         cartCountItems[0].innerText = actual; 
+        //       }, 150); 
+        //       setTimeout(function () { 
+        //         Util.removeClass(cartCount, 'cd-cart__count--update'); 
+        //       }, 200); 
+        //       setTimeout(function () { 
+        //         cartCountItems[1].innerText = next; 
+        //         animatingQuantity = false; 
+        //       }, 230); 
+        //     } 
+        //   } else { 
+        //     var actual = Number(cartCountItems[0].innerText) + quantity; 
+        //     var next = actual + 1; 
+        //     cartCountItems[0].innerText = actual; 
+        //     cartCountItems[1].innerText = next; 
+        //     animatingQuantity = false; 
+        //   } 
+        // }; 
+        // function updateCartTotal(price, bool) { 
+        //   cartTotal.innerText = bool ? (Number(cartTotal.innerText) + Number(price)).toFixed(2) : (Number(cartTotal.innerText) - Number(price)).toFixed(2); 
+        // }; 
+        // function quickUpdateCart() {
+        //     var quantity = 0; var price = 0; 
+        //     for (var i = 0; i < cartListItems.length; i++) { 
+        //       if (!Util.hasClass(cartListItems[i], 'cd-cart__product--deleted')) { 
+        //         var singleQuantity = Number(cartListItems[i].getElementsByTagName('select')[0].value); 
+        //         quantity = quantity + singleQuantity; 
+        //         price = price + singleQuantity * Number((cartListItems[i].getElementsByClassName('cd-cart__price')[0].innerText).replace('$', '')); 
+        //       } 
+        //     }
+        //     cartTotal.innerText = price.toFixed(2); 
+        //     cartCountItems[0].innerText = quantity; 
+        //     cartCountItems[1].innerText = quantity + 1;
+        //   };
+      }
+    });
+
+  </script>
+
+
+  <div class="footer">
+    <p id="footerholder" style="color: white; font-size: 17px; text-align: center;">JAZZY INCORPORATION</p>
+    <p style="color: white; font-size: 15px; text-align: center;">PHONE: +2348132131075, +2349132131075. EMAIL:
+      jazzyincorporation@gmail.com</p>
+    <p style="color: grey; font-size: 13px; text-align: center;">Good Shepherd's Mansion, Iyiagu Estate, Temp Site,
+      Awka, Nigeria.</p>
+  </div>
+</body>
+
+</html>

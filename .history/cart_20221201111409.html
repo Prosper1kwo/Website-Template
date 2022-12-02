@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jazzy.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/home.css" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+  <meta name="robots" content="noindex,follow" />
+	<script type="text/javascript" src="js/cart.js"></script>
+	<link rel="stylesheet" type="text/css" href="cart.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+	 <div class="header">
+    <a href="jazzy.html"><h1 class="logo" style="float: left;"><b>JAZZY</b><i class="fa fa-shopping-cart fa-1x" style=""></i></h1></a>
+    <ul id="menu">
+        <b><li><a href="loginjazzy.html">Home</a></li>
+        <li><a href="#mainbody2">Gallery</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="about1.html">About & Services</a></li></b>
+        </ul>  
+        <a href="cart.html"><i class="fa fa-cart-plus fa-2x" style="float: right; margin-top: 30px; margin-right: 4%;"></i></a>
+  </div>
+
+
+  <!-- <div class="mainbody1" >
+    <ul id="nav" style="list-style-type: none">
+      <i><li><a href="shoes1.html"><i class="fa fa-shoe-prints"></i>SHOES</a></li><br>
+      <li><a href="clothes1.html">CLOTHES</a></li><br>
+      <li><a href="bags1.html">BAGS</a></li><br>
+      <li><a href="phones1.html">PHONES & ACCESSORIES</a></li><br>
+      <li><a href="electro1.html">LAPTOPS</a></li><br><i>
+    </ul>
+  </div> -->
+
+
+	
+
+<div id="mainbody2" >
+	<div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+      Shopping Bag
+    </div>
+
+    <!-- Product #1 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="images/item-1.png" alt="" />
+      </div>
+
+      <div class="description">
+        <span>Common Projects</span>
+        <span>Bball High</span>
+        <span>White</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="images/plus.svg" alt="" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="total-price">$549</div>
+    </div>
+
+    <!-- Product #2 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="images/item-2.png" alt=""/>
+      </div>
+
+      <div class="description">
+        <span>Maison Margiela</span>
+        <span>Future Sneakers</span>
+        <span>White</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="images/plus.svg" alt="" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="total-price">$870</div>
+    </div>
+
+    <!-- Product #3 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="images/item-3.png" alt="" />
+      </div>
+
+      <div class="description">
+        <span>Our Legacy</span>
+        <span>Brushed Scarf</span>
+        <span>Brown</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="images/plus.svg" alt="" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="total-price">$349</div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $('.minus-btn').on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest('div').find('input');
+      var value = parseInt($input.val());
+
+      if (value > 1) {
+        value = value - 1;
+      } else {
+        value = 0;
+      }
+
+      $input.val(value);
+
+    });
+
+    $('.plus-btn').on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest('div').find('input');
+      var value = parseInt($input.val());
+
+      if (value < 100) {
+        value = value + 1;
+      } else {
+        value =100;
+      }
+
+      $input.val(value);
+    });
+
+    $('.like-btn').on('click', function() {
+      $(this).toggleClass('is-active');
+    });
+
+    $('.delete-btn').on('click', function(e) {
+      div.remove;
+    });
+  </script>
+</div>
+
+<div class="footer">
+    <p id="footerholder" style="color: white; font-size: 17px; text-align: center;">JAZZY INCORPORATION</p>
+    <p style="color: white; font-size: 15px; text-align: center;">PHONE: +2348132131075, +2349132131075. EMAIL: jazzyincorporation@gmail.com</p>
+    <p style="color: grey; font-size: 13px; text-align: center;">Good Shepherd's Mansion, Iyiagu Estate, Temp Site, Awka, Nigeria.</p>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

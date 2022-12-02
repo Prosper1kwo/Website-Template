@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jazzy.com</title>
+  <link rel="stylesheet" type="text/css" href="css/home.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/scipt.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="css/signup.css">
+  <style>
+
+
+  body {}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.login{
+  background-color: transparent;
+    color: grey;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.login:hover{
+   background-color: grey;
+    color: white;
+    border-radius: 4px 4px 0 0;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 25%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  float: left;
+}
+
+.price {
+  color: grey;
+  font-size: 15px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 12px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="jazzy.html"><h1 class="logo" style="float: left;"><b>JAZZY</b><i class="fa fa-shopping-cart fa-1x" style=""></i></h1></a>
+    <ul id="menu">
+        <b><li><a href="loginjazzy.html">Home</a></li>
+        <li><a href="#mainbody2">Gallery</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="about1.html">About & Services</a></li></b>
+        </ul>  
+        <a href="cart.html"><i class="fa fa-cart-plus fa-2x" style="float: right; margin-top: 30px; margin-right: 4%;"></i></a>
+  </div>
+
+
+
+
+  <div class="mainbody1">
+    <ul id="nav" style="list-style-type: none">
+      <i><li><a href="shoes1.html"><i class="fa fa-shoe-prints"></i>SHOES</a></li><br>
+      <li><a href="clothes1.html">CLOTHES</a></li><br>
+      <li><a href="bags1.html">BAGS</a></li><br>
+      <li><a href="phones1.html">PHONES & ACCESSORIES</a></li><br>
+      <li><a href="electro1.html">LAPTOPS</a></li><br></i>
+    </ul>
+  </div>
+
+
+  <div id="mainbody2" style="height: auto;">
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button onClick="{addToCart()}">Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    
+
+
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+
+
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic.jpg"><img src="images/classic.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/classic2.jpg"><img src="images/classic2.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card">
+        <a href="images/child.jpg"><img src="images/child.jpg" alt="Denim Jeans" style="width:100%; height: 220px"></a>
+        <h3>Tailored Jeans</h3>
+      <p class="price">$19.99</p>
+        <p style="font-size: 10px">Some text about the jeans</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+
+  
+  <div class="footer">
+    <p id="footerholder" style="color: white; font-size: 17px; text-align: center;">JAZZY INCORPORATION</p>
+    <p style="color: white; font-size: 15px; text-align: center;">PHONE: +2348132131075, +2349132131075. EMAIL: jazzyincorporation@gmail.com</p>
+    <p style="color: grey; font-size: 13px; text-align: center;">Good Shepherd's Mansion, Iyiagu Estate, Temp Site, Awka, Nigeria.</p>
+  </div>
+</body>
+</html>
